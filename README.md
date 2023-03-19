@@ -1,7 +1,7 @@
 # Url-Shortener
 A web URL Shortening application written in HTML, CSS and JavaScript.
 
-![Table preview](https://github.com/Harkanni/Table_Sort/blob/main/Table_Sort_Preview.png)
+![Table preview](https://github.com/Harkanni/Url-Shortener/blob/main/SS_URL_SHORTENER.png.png)
 
 ##  Features
 
