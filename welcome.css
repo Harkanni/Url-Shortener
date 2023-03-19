@@ -52,11 +52,21 @@ div > .details::after  {
   display: block
 }
 
+main .img-box img {
+  display: none
+}
+
 
 @media screen and (max-width: 500px){
   nav#nav {
+    background: #fff;
+    color: #000 !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+  }
+  nav#nav a {
+    font-weight: bold;
+    color: #000 !important;
   }
   nav #nav-img {
     width: 2rem !important;
@@ -64,9 +74,39 @@ div > .details::after  {
   main #container {
     flex-direction: column-reverse !important
   }
+  .details h1 {
+    font-weight: bold;
+    font-size: 1.9rem
+  }
+  .details h3 {
+    font-size: .9rem
+  }
+  .details span {
+    font-size: .5rem
+  }
   
   main .img-box svg {
     display: none;
+  }
+  
+  main .img-box img {
+    display: block;
+    margin-bottom: 3rem;
+    transform: translateY(-40px)
+  }
+  
+  .details > div{
+    display: block !important;
+    width: 100% !important;
+    margin-top: 10px
+  }
+  
+  .details > div button {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .details > div button:nth-of-type(2) {
+    margin-bottom: 5px
   }
 }
 
