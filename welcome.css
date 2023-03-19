@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hambugger-menu {
+  
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: centers;
+  font-family: "Josefin Sans" !important;
+  background: #202020 !important;
+  color: #fff !important;
+  overflow-x: hidden
+}
+
+main {
+  width: 90,% !important;
+  height: ;
+  margin: auto;
+}
+
+main .details {
+  transform: translateY(-4rem)
+}
+.details h1 {
+  font-weight: bold;
+  font-size: 2.3rem
+}
+.details h3 {
+  font-size: 1.5rem
+}
+.details h3 span{
+  color: #fd601e;
+  font-size: 2.5rem;
+  scale: 2.5rem;
+  line-height: 1px
+}
+.details button {
+  width: 50%;
+  padding: 10px
+}
+.details span {
+  font-size: .8rem
+}
+div > .details::after  {
+  content: "Sign up to save your url history*";
+  display: block
+}
+
+
+@media screen and (max-width: 500px){
+  nav#nav {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  nav #nav-img {
+    width: 2rem !important;
+  }
+  main #container {
+    flex-direction: column-reverse !important
+  }
+  
+  main .img-box svg {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  background: greyh
+}

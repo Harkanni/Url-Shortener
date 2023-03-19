@@ -7,35 +7,226 @@
     <title>URL Shortener</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-	<nav class="nav navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid d-flex justify-content-center align-items-center">
-			<a class="navbar-brand d-flex align-items-center" href="#">
-				<img src="./images/logo.png" class="mr-1" width="5%" alt="Brand Logo">
-				<span>Shotify.io</span>
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item login">
-						<a class="nav-link" href="#">Login</a>
-					</li>					
-				</ul>
+	<nav class="nav d-flex justify-content-between align-items-center p-3">		
+		<a class="navbar-brand d-flex align-items-center" href="#">
+			<img src="./images/logo.png" class="mr-1" width="5%" alt="Brand Logo">
+			<span>Shotify.io</span>
+		</a>
+		
+		<ul class="navbar-nav d-flex flex-row justify-content-end" id="navbarNav">
+			<li class="nav-item mr-2">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<li class="nav-item login">
+				<a class="nav-link" href="#">Login</a>
+			</li>				
+		</ul>
+
+		<div class="hambugger-menu">
+			<i class="fa fa-2x fa-hamburger" style="color: #fd601e; cursor: pointer;"></i>
+		</div>
+
+		<div class="sidebar">
+			<div class="togleBtn">
+				<i class="fa fa-close btn btn-secondary bg-dark"></i>
+			</div>
+			<div class="mb-5 d-flex reverse">
+				<i class="mr-2 fa fa-id-badge" style="color: #fd601e;"></i>
+				<p>Home</p>
+			</div>
+			<div class="mb-5 d-flex reverse">
+				<i class="mr-2 fa fa-sign-in-alt" style="color: #fd601e;"></i>
+				<p>Login</p>
 			</div>
 		</div>
+			
 	</nav>
 
+	<main class="container col-lg-9 col-md-12 col-sm-12">
+		<div class="title">
+			<h1>Shorten your <span>loooong</span> urls like never before!</h1>
+			<span>copy your long boring url. Paste it below. Then b💥💥m You got it, right ?</span>
+		</div>
+
+		<!-- <p class="mb-2">Your Long Url</p> -->
+		<div class=" d-flex justify-content-between align-items-center url-form">
+			<input class="form-control" type="text" placeholder="Your long Url">
+			<button class="" type="submit">Shorten Url</button>
+		</div>
+
+		<section id="history">
+			<div class="heading">
+				<h2>HoHo</h2>
+				<small>Here are your shortened Urls, now start rick rolling your friends</small>
+			</div>			
+			<div class="container history-records col-lg-12 col-md-12 col-sm-12">
+				<div class="row justify-content-center">
+					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
+						<div>
+							<p class="link-text">www.google.com</p>
+							<div class="d-flex">
+								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
+								<a href="#">shorty.test/u/fdfg</a>
+							</div>
+						</div>							
+						
+						<div class="record-info">
+							<div class="views d-flex justify-content-between">
+								<i class="fa fa-eye mr-2"></i>
+								<p class="mb-0">6134</p>	
+							</div>						
+							<p class="record-time mb-0">6 seconds</p>
+							<i class="fa fa-copy" style="color: #009bfe"></i>
+							<i class="fa fa-trash-alt" style="color: #fd601e;">delete</i>
+						</div>
+					</div>
+
+					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
+						<div>
+							<p class="link-text">www.google.com</p>
+							<div class="d-flex">
+								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
+								<a href="#">shorty.test/u/fdfg</a>
+							</div>
+						</div>							
+						
+						<div class="record-info">
+							<div class="views d-flex justify-content-between">
+								<i class="fa fa-eye mr-2"></i>
+								<p class="mb-0">6134</p>	
+							</div>						
+							<p class="record-time mb-0">6 seconds</p>
+							<i class="fa fa-copy" style="color: #009bfe"></i>
+							<i class="fa fa-trash-alt" style="color: #fd601e;">delete</i>
+						</div>
+					</div>
+
+					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
+						<div>
+							<p class="link-text">www.google.com</p>
+							<div class="d-flex">
+								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
+								<a href="#">shorty.test/u/fdfg</a>
+							</div>
+						</div>							
+						
+						<div class="record-info">
+							<div class="views d-flex justify-content-between">
+								<i class="fa fa-eye mr-2"></i>
+								<p class="mb-0">6134</p>	
+							</div>						
+							<p class="record-time mb-0">6 seconds</p>
+							<i class="fa fa-copy" style="color: #009bfe"></i>
+							<i class="fa fa-trash-alt" style="color: #fd601e;">delete</i>
+						</div>
+					</div>
+
+					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
+						<div>
+							<p class="link-text">www.google.com</p>
+							<div class="d-flex">
+								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
+								<a href="#">shorty.test/u/fdfg</a>
+							</div>
+						</div>							
+						
+						<div class="record-info">
+							<div class="views d-flex justify-content-between">
+								<i class="fa fa-eye mr-2"></i>
+								<p class="mb-0">6134</p>	
+							</div>						
+							<p class="record-time mb-0">6 seconds</p>
+							<i class="fa fa-copy" style="color: #009bfe"></i>
+							<i class="fa fa-trash-alt" style="color: #fd601e;">delete</i>
+						</div>
+					</div>
+
+					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
+						<div>
+							<p class="link-text">www.google.com</p>
+							<div class="d-flex">
+								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
+								<a href="#">shorty.test/u/fdfg</a>
+							</div>
+						</div>							
+						
+						<div class="record-info">
+							<div class="views d-flex justify-content-between">
+								<i class="fa fa-eye mr-2"></i>
+								<p class="mb-0">6134</p>	
+							</div>						
+							<p class="record-time mb-0">6 seconds</p>
+							<i class="fa fa-copy" style="color: #009bfe"></i>
+							<i class="fa fa-trash-alt" style="color: #fd601e;">delete</i>
+						</div>
+					</div>
+
+					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
+						<div>
+							<p class="link-text">www.google.com</p>
+							<div class="d-flex">
+								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
+								<a href="#">shorty.test/u/fdfg</a>
+							</div>
+						</div>							
+						
+						<div class="record-info">
+							<div class="views d-flex justify-content-between">
+								<i class="fa fa-eye mr-2"></i>
+								<p class="mb-0">6134</p>	
+							</div>						
+							<p class="record-time mb-0">6 seconds</p>
+							<i class="fa fa-copy" style="color: #009bfe"></i>
+							<i class="fa fa-trash-alt" style="color: #fd601e;">delete</i>
+						</div>
+					</div>
+				</div>
+
+				<div class="navigation">
+					<div class="d-flex justify-content-center">
+						<div class="btn btn-secondary mr-2">1</div>
+						<div class="btn btn-secondary mr-2">2</div>
+						<div class="btn btn-secondary mr-2">3</div>
+						<div class="btn btn-secondary mr-2">4</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <div class="container px-4 text-center">
+		  <div class="row gx-5">
+		    <div class="col bg-primary">
+		     <div class="p-3">Custom column padding</div>
+		    </div>
+		    <div class="col bg-dark">
+		      <div class="p-3">Custom column padding</div>
+		    </div>
+		  </div>
+		</div>
+ --></main>
+ 	<footer id="footer" class="p-3 bg-dark">
+	 	<div class="footer-container d-flex justify-content-between align-items-center">
+	 		<div onload="Date.now()" id="date">Copyright 2023</div>
+	 		<div class="socials">
+	 			<i class="mr-5 fa-2x fa fab fa-github"></i>
+	 			<i class="mr-5 fa-2x fa fab fa-twitter"></i>
+	 			<i class="mr-5 fa-2x fa fab fa-linkedin"></i>
+	 		</div>
+	 	</div>
+ 		
+ 	</footer>
 
 
 
 
 
+
+
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
