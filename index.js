@@ -7,13 +7,15 @@ var PageObj = {
 	Toggle_Sidebar: function (){
 		if(this.sidebarIsViscible == false){
 			this.SIDEBAR.classList.add("viscible")
-			this.SIDEBAR.setAttribute("data-menu", "on")
+			
 			this.sidebarIsViscible = true
+			this.SIDEBAR.setAttribute("data-menu", "on")
 		}
 		else {
 			this.SIDEBAR.classList.remove("viscible")	
-			this.sidebarIsViscible = false
+			
 			this.SIDEBAR.setAttribute("data-menu", "on")
+			this.sidebarIsViscible = false
 		}
 		
 	},
