@@ -6,14 +6,12 @@ var PageObj = {
 	togleBtn: document.querySelector(".togleBtn"),
 	Toggle_Sidebar: function (){
 		if(this.sidebarIsViscible == false){
-			this.SIDEBAR.classList.add("viscible")
-			
+			this.SIDEBAR.classList.add("viscible")			
 			this.sidebarIsViscible = true
 			this.SIDEBAR.setAttribute("data-menu", "on")
 		}
 		else {
-			this.SIDEBAR.classList.remove("viscible")	
-			
+			this.SIDEBAR.classList.remove("viscible")			
 			this.SIDEBAR.setAttribute("data-menu", "on")
 			this.sidebarIsViscible = false
 		}
