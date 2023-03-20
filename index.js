@@ -1,5 +1,4 @@
 console.log("Javascript loaded")
-// SIDEBAR TOGGLE
 var PageObj = {
 	sidebarIsViscible: false,
 	SIDEBAR: document.querySelector(".sidebar"),
