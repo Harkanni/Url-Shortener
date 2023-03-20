@@ -1,4 +1,4 @@
-console.log("Javascript loaded")
+console.log("Javascript")
 var PageObj = {
 	sidebarIsViscible: false,
 	SIDEBAR: document.querySelector(".sidebar"),
