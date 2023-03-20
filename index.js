@@ -6,7 +6,6 @@ var PageObj = {
 	menuBar: document.querySelector(".hambugger-menu"),
 	togleBtn: document.querySelector(".togleBtn"),
 	Toggle_Sidebar: function (){
-		// console.log(this)
 		if(this.sidebarIsViscible == false){
 			this.SIDEBAR.classList.add("viscible")
 			this.SIDEBAR.setAttribute("data-menu", "on")
