@@ -13,7 +13,7 @@ var PageObj = {
 		else {
 			this.SIDEBAR.classList.remove("viscible")			
 			this.SIDEBAR.setAttribute("data-menu", "on")
-			this.sidebarIsViscible = false
+			this.sidebarIsViscible = false;
 		}
 		
 	},
