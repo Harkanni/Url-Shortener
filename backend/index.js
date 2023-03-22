@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 
 app.get("/bitly", (req, res) => {
 	console.log("Request received")
-	res.send("<h1>Hello WORLD</h1>")
+	res.send({"hello":"world"})
 })
 
 

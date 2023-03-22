@@ -22,9 +22,10 @@ var PageObj = {
 	ShortenLink: async function(link){
 		await fetch(this.URL)
 		.then((res) => {
-			let data = res.json()
-			console.log(data)
+			var data = res.json()
+			return data
 		})
+		.then((data) => console.log(data))
 	}
 }
 
