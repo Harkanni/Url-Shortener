@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>URL Shortener</title>
-    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 	<meta property="og:title" content="A URL shortener built with powerful tools to help you grow and market your brand.. " />
 	<meta property="og:description" content="Frontend Project (URL Shortener).  - Hosted ON GITHUB" />
-	<meta property="og:image" content="./images/SS_URL_SHORTENER.png"/>
-	<meta property="og:image" content="./images/SS_URL_SHORTENER.png" />
-    <link rel="stylesheet" href="./style.css">
+	<meta property="og:image" content="./assets/images/SS_URL_SHORTENER.png"/>
+	<meta property="og:image" content="./assets/images/SS_URL_SHORTENER.png" />
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 	<nav class="nav d-flex justify-content-between align-items-center p-3">		
 		<a class="navbar-brand d-flex align-items-center" href="#">
-			<img src="./images/logo.png" class="mr-1" width="5%" alt="Brand Logo">
+			<img src="./assets/images/logo.png" class="mr-1" width="5%" alt="Brand Logo">
 			<span>Shotify.io</span>
 		</a>
 		
@@ -58,7 +58,7 @@
 
 		<!-- <p class="mb-2">Your Long Url</p> -->
 		<div class=" d-flex justify-content-between align-items-center url-form">
-			<input class="form-control" type="text" placeholder="Your long Url">
+			<input class="form-control" type="text" placeholder="Your long Url" id="url">
 			<button class="" id="submit" type="submit">Shorten Url</button>
 		</div>
 
@@ -210,7 +210,33 @@
 		    </div>
 		  </div>
 		</div>
- --></main>
+ -->
+ 	<!-- Modal -->
+ 	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body text-dark text-justify" style="font-family: cursive; line-height: 2rem!important
+	      ">
+	        Here's your shortened URL ====> <span id="shortURL"></span><br>
+	        Help a Junior developer and live a like <i class="fa fa-heart" style="color: red"></i><span class="font-weight-bold"> !</span><br>
+	        You'd be redirected to the HOME PAGE IN <span class="timer">3s</span>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+</main>
  	<footer id="footer" class="p-3 bg-dark">
 	 	<div class="footer-container d-flex justify-content-between align-items-center">
 	 		<div onload="Date.now()" id="date">Copyright 2023</div>
@@ -233,6 +259,6 @@
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  	<script type="text/javascript" src="./index.js"></script>
+  	<script type="module" src="./assets/JS/index.js"></script>
   </body>
 </html>

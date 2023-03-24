@@ -1,4 +1,7 @@
-console.log("Javascript")
+import _User from "./User.js"
+
+const User = new _User()
+console.log(User)
 var PageObj = {
 	getUrlBtn: document.querySelector("#submit"),
 	sidebarIsViscible: false,
@@ -20,12 +23,24 @@ var PageObj = {
 		
 	},
 	ShortenLink: async function(link){
-		await fetch(this.URL)
-		.then((res) => {
-			var data = res.json()
-			return data
+		await fetch(this.URL, {
+			headers: {
+				"content-type": "application/json",
+				"URL": link
+			}
 		})
-		.then((data) => console.log(data))
+		.then((res) => res.json())
+		.then((data) => {
+			let result = document.querySelector("#shortURL")
+			result.innerHTML = data.shortUrl
+			console.log(data)
+			$('#exampleModalCenter').modal()
+			return data.shortUrl
+		})
+		.then((data) => {
+			User.URLS[link] = data
+			console.log(User)
+		})
 	}
 }
 
@@ -38,8 +53,9 @@ PageObj.togleBtn.addEventListener("click", () => {
 })
 PageObj.getUrlBtn.addEventListener("click", (e) => {
 	e.preventDefault()
-	console.log("click")
-	PageObj.ShortenLink.call(PageObj)
+	let link = document.querySelector("#url").value
+	console.log("click", link)
+	PageObj.ShortenLink.call(PageObj, link)
 })
 
 
