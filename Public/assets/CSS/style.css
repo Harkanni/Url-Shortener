@@ -89,6 +89,7 @@ main #history {
 }
 #history .record {
 /* 	background: #374151; */
+	word-break: break-all;
 	border-radius: .4rem;
 	display: flex;
 	flex-direction: column;

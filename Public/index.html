@@ -10,6 +10,7 @@
 	<meta property="og:description" content="Frontend Project (URL Shortener).  - Hosted ON GITHUB" />
 	<meta property="og:image" content="./assets/images/SS_URL_SHORTENER.png"/>
 	<meta property="og:image" content="./assets/images/SS_URL_SHORTENER.png" />
+	<link rel="stylesheet" href="./assets/CSS/loader.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,6 +52,16 @@
 	</nav>
 
 	<main class="container col-lg-9 col-md-12 col-sm-12">
+		<div class="loading_animation">
+			<div class="preloader">
+				<div class="preloader__square"></div>
+				<div class="preloader__square"></div>
+				<div class="preloader__square"></div>
+				<div class="preloader__square"></div>
+			</div>
+			<div class="status">Loading<span class="status__dot">.</span><span class="status__dot">.</span><span class="status__dot">.</span></div>
+		</div>
+		
 		<div class="title">
 			<h1>Shorten your <span>loooong</span> urls like never before!</h1>
 			<span>copy your long boring url. Paste it below. Then b💥💥m You got it, right ?</span>
@@ -71,7 +82,7 @@
 				<div class="row justify-content-center">
 					<div class="record d-flex flex-col justify-content-between bg-dark mb-3">
 						<div>
-							<p class="link-text">www.google.com</p>
+							<p class="link-text">www.googlgfgfgfhfhfhfhe.com</p>
 							<div class="d-flex">
 								<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
 								<a href="#">shorty.test/u/fdfg</a>
