@@ -67,7 +67,12 @@ var PageObj = {
 		console.log("Parent ", parent)
 	}
 }
-
+window.addEventListener("load", (event) => {
+  setTimeout(() => {
+  	let preLoader = document.querySelector(".loading_animation");
+  	preLoader.remove()
+  }, 3000)
+});
 // USED THE CALL METHOD TO SET THE "this" keyword to the PageObj Object;
 PageObj.menuBar.addEventListener("click", () => {
 	PageObj.Toggle_Sidebar.call(PageObj)
