@@ -18,7 +18,7 @@ const headers = {
   // "workspace": "YOUR_WORKSPACE_ID"
 }
 
-shorten = async url => {
+async function shorten(url){
   let endpoint = "https://api.rebrandly.com/v1/links";
   let linkRequest = {
     destination: url,
@@ -45,12 +45,10 @@ app.get("/bitly", (req, res) => {
 	console.log("Request received")
 	let URL = req.headers["url"]
 	shorten(URL).then((data) => {
-		// res.send({"hello":"world"})
 		res.send(data)
 	}).catch((error) => {
 		res.send({"error": "Invalid url"})
 	})
-  console.log("called last")
 })
 
 
