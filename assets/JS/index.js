@@ -1,11 +1,13 @@
 import _User from "./User.js"
+const DEV_URL = "http://localhost:8080/bitly";
+const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/"
 
 const User = new _User()
 console.log(User)
 var PageObj = {
 	getUrlBtn: document.querySelector("#submit"),
 	sidebarIsViscible: false,
-	URL: "http://localhost:8080/bitly",
+	URL: PRODUCTION_URL,
 	SIDEBAR: document.querySelector(".sidebar"),
 	menuBar: document.querySelector(".hambugger-menu"),
 	togleBtn: document.querySelector(".togleBtn"),
