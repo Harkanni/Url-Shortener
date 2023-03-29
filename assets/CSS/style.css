@@ -130,6 +130,7 @@ main #history {
 }
 .sidebar.viscible{
 	display: block;
+	position: fixed;
 	transform: translateX(10%) !important;;
 	transition: transform .5s ease-in
 }
@@ -141,8 +142,8 @@ main #history {
 	background: grey;
 	position: absolute;
   top: 0;
-	left: 30px;
-/* 	bottom: 0; */
+	right: 10px;
+	bottom: 0;
 /* 	min-height: 94.5% !important;; */
 	z-index: 1000;
   padding: 10rem 2rem;
