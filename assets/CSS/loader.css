@@ -6,7 +6,7 @@
 	--shade4: #ffffff;
 	--dur1: 1s;
 	--dur2: 6s;
-	font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320));
+	/* font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320)); */
 }
 /* body {
 	
