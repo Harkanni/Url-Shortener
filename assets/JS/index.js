@@ -25,7 +25,7 @@ var PageObj = {
 		}
 		
 	},
-	ShortenLink: async function(link){
+	ShortenLink: async function(link){		
 		fetch(this.URL, {
 			headers: {
 				"content-type": "application/json",
@@ -43,6 +43,7 @@ var PageObj = {
 			User.URLS[link] = data;
 			this.updateDom(document.querySelector(".history-records .row"), link, data)
 			console.log(User)
+			document.body.classList.add("remove_preloader")
 		})
 	},
 	updateDom(parent, link, data){
@@ -84,6 +85,7 @@ PageObj.togleBtn.addEventListener("click", () => {
 })
 PageObj.getUrlBtn.addEventListener("click", (e) => {
 	e.preventDefault()
+	document.body.classList.remove("remove_preloader")
 	let link = document.querySelector("#url").value
 	console.log("click", link)
 	PageObj.ShortenLink.call(PageObj, link)

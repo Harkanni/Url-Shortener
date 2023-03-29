@@ -8,7 +8,7 @@ body {
 /* 	font-family: "Josefin Sans" !important; */
 	background-image: linear-gradient(145deg,var(--shade3),var(--shade2)) !important;
 	color: var(--fg);
-	font-family: monospace !important;
+	/* font-family: monospace !important; */
 /* 	background: #202020 !important; */
 	color: #fff !important;
 	position: relative;
@@ -46,6 +46,7 @@ main {
 main .title {
 	text-align: center;
 	font-weight: bolder;
+	font-family: "Lucida Bright" !important;
 }
 main .title h1 {
 	color: #fd601e;
