@@ -15,6 +15,10 @@ body {
 	overflow-x: hidden
 }
 
+body.remove_preloader .loading_animation {
+	display: none !important;
+}
+
 .nav a{
 	color: #fff !important;
 }

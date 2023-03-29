@@ -1,13 +1,14 @@
 import _User from "./User.js"
 const DEV_URL = "http://localhost:8080/bitly";
-const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/"
+const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 
 const User = new _User()
 console.log(User)
-var PageObj = {
-	getUrlBtn: document.querySelector("#submit"),
+var PageObj = {	
 	sidebarIsViscible: false,
 	URL: PRODUCTION_URL,
+	getUrlBtn: document.querySelector("#submit"),
+	preLoader: document.querySelector(".loading_animation"),
 	SIDEBAR: document.querySelector(".sidebar"),
 	menuBar: document.querySelector(".hambugger-menu"),
 	togleBtn: document.querySelector(".togleBtn"),
@@ -71,8 +72,7 @@ var PageObj = {
 }
 window.addEventListener("load", (event) => {
   setTimeout(() => {
-  	let preLoader = document.querySelector(".loading_animation");
-  	preLoader.remove()
+  	document.body.classList.add("remove_preloader")
   }, 3000)
 });
 // USED THE CALL METHOD TO SET THE "this" keyword to the PageObj Object;
