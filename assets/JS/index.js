@@ -74,7 +74,8 @@ var PageObj = {
 window.addEventListener("load", (event) => {
   setTimeout(() => {
   	document.body.classList.add("remove_preloader")
-  }, 4000)
+  }, 4000);
+	$('.owl-carousel').owlCarousel();
 });
 // USED THE CALL METHOD TO SET THE "this" keyword to the PageObj Object;
 PageObj.menuBar.addEventListener("click", () => {
