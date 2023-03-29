@@ -50,8 +50,8 @@ main .title {
 main .title h1 {
 	color: #fd601e;
 	font-size: 3.5rem;
-	word-spacing: -3px;
-	letter-spacing: -2px
+	/* word-spacing: -3px;
+	letter-spacing: -2px */
 }
 main .title h1 span {
 	color: #009bfe

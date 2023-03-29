@@ -73,7 +73,7 @@ var PageObj = {
 window.addEventListener("load", (event) => {
   setTimeout(() => {
   	document.body.classList.add("remove_preloader")
-  }, 3000)
+  }, 4000)
 });
 // USED THE CALL METHOD TO SET THE "this" keyword to the PageObj Object;
 PageObj.menuBar.addEventListener("click", () => {
