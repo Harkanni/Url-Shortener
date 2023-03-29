@@ -140,8 +140,7 @@ main #history {
 	transition: transform .5s ease-in;
 	width: 100%;
 	background: grey;
-	position: absolute;
-  top: 0;
+  	top: 0;
 	right: 10px;
 	bottom: 0;
 /* 	min-height: 94.5% !important;; */
