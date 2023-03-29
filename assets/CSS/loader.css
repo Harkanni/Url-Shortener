@@ -8,17 +8,17 @@
 	--dur2: 6s;
 	font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320));
 }
-body {
+/* body {
 	
-/* 	display: flex; */
-/* 	font: 1em/1.5 Hind, sans-serif; */
-/* 	flex-direction: column; */
-/* 	height: 100vh; */
+	display: flex;
+	font: 1em/1.5 Hind, sans-serif;
+	flex-direction: column;
+	height: 100vh;
 
 }
 main {
-/* 	margin: auto; */
-}
+	margin: auto;
+} */
 .loading_animation {
 	position: fixed;
 	background: #202020 !important;
