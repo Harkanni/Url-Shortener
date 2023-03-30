@@ -1,14 +1,12 @@
 .modal {
-    display: block !important;
     text-align: left!important;
   }
   .modal-body {
     background: #202020;
-    color: #fff !important;
+    /* color: #fff !important; */
   }
   div#cookie {
-    position: relative !important;;
-  /*   background: red; */
+    position: relative !important;
   }
   #Capa_1 {
     width: 20%;
