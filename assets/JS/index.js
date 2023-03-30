@@ -6,7 +6,7 @@ const User = new _User()
 console.log(User)
 var PageObj = {	
 	sidebarIsViscible: false,
-	URL: DEV_URL,
+	URL: PRODUCTION_URL,
 	getUrlBtn: document.querySelector("#submit"),
 	preLoader: document.querySelector(".loading_animation"),
 	SIDEBAR: document.querySelector(".sidebar"),
