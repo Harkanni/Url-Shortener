@@ -6,7 +6,7 @@ const User = new _User()
 console.log(User)
 var PageObj = {	
 	sidebarIsViscible: false,
-	URL: PRODUCTION_URL,
+	URL: DEV_URL,
 	getUrlBtn: document.querySelector("#submit"),
 	preLoader: document.querySelector(".loading_animation"),
 	SIDEBAR: document.querySelector(".sidebar"),
@@ -34,6 +34,7 @@ var PageObj = {
 		})
 		.then((res) => res.json())
 		.then((data) => {
+			console.log(data)
 			let result = document.querySelector("#shortURL")
 			result.innerHTML = data.shortUrl
 			$('#exampleModalCenter').modal()
