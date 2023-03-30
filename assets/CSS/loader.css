@@ -1,9 +1,9 @@
 :root {
-	--fg: #17181c;
-	--shade1: #727274;
+	--fg: #000000;
+	--shade1: #ffffff0d !important;
 	--shade2: #cccdd1;
 	--shade3: #f3f4f8;
-	--shade4: #ffffff;
+	--shade4: #000000 !important;
 	--dur1: 1s;
 	--dur2: 6s;
 	/* font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320)); */
