@@ -5,13 +5,15 @@ const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 const User = new _User()
 console.log(User)
 var PageObj = {	
+	modalCopyButton: document.querySelector(".close"),
+	shortenedURLLink: document.querySelector("#shortURL"),
 	sidebarIsViscible: false,
 	URL: PRODUCTION_URL,
 	getUrlBtn: document.querySelector("#submit"),
 	preLoader: document.querySelector(".loading_animation"),
 	SIDEBAR: document.querySelector(".sidebar"),
 	menuBar: document.querySelector(".hambugger-menu"),
-	togleBtn: document.querySelector(".togleBtn"),
+	toggleBtn: document.querySelector(".toggleBtn"),
 	Toggle_Sidebar: function (){
 		if(this.sidebarIsViscible == false){
 			this.SIDEBAR.classList.add("viscible")			
@@ -70,9 +72,14 @@ var PageObj = {
 							</div>`
 		parent.appendChild(child)
 		console.log("Parent ", parent)
+	},
+	copyText(element){
+		element.select()
+		element.setSelectionRange(0, 9999)
 	}
 }
 window.addEventListener("load", (event) => {
+	console.log(PageObj.modalCopyButton)
   setTimeout(() => {
   	document.body.classList.add("remove_preloader")
   }, 4000);
@@ -82,7 +89,7 @@ window.addEventListener("load", (event) => {
 PageObj.menuBar.addEventListener("click", () => {
 	PageObj.Toggle_Sidebar.call(PageObj)
 })
-PageObj.togleBtn.addEventListener("click", () => {
+PageObj.toggleBtn.addEventListener("click", () => {
 	PageObj.Toggle_Sidebar.call(PageObj)
 })
 PageObj.getUrlBtn.addEventListener("click", (e) => {
@@ -92,6 +99,10 @@ PageObj.getUrlBtn.addEventListener("click", (e) => {
 	console.log("click", link)
 	PageObj.ShortenLink.call(PageObj, link)
 })
+PageObj.modalCopyButton.addEventListener("click", () => {
+	PageObj.copyText(PageObj.shortenedURLLink)
+})
+
 
 
 
