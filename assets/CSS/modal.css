@@ -1,0 +1,17 @@
+.modal {
+    display: block !important;
+    text-align: left!important;
+  }
+  .modal-body {
+    background: #202020;
+    color: #fff !important;
+  }
+  div#cookie {
+    position: relative !important;;
+  /*   background: red; */
+  }
+  #Capa_1 {
+    width: 20%;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
