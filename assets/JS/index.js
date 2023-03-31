@@ -75,10 +75,6 @@ var PageObj = {
 	},
 	copyText(element){
 		navigator.clipboard.writeText(element.innerHTML);
-		alert(element.innerHTML)
-		let toast = $('.toast')
-		console.log(toast)
-		toast.innerHTML = "Go go go!!"
 		$('.toast').toast('show')
 		$('[data-toggle="tooltip"]').tooltip({title: "Hooray"});
 	}
