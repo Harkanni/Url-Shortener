@@ -80,6 +80,7 @@ var PageObj = {
 		console.log(toast)
 		toast.innerHTML = "Go go go!!"
 		$('.toast').toast('show')
+		$('[data-toggle="tooltip"]').tooltip({title: "Hooray"});
 	}
 }
 window.addEventListener("load", (event) => {
