@@ -43,8 +43,7 @@ var PageObj = {
 			return data.shortUrl
 		})
 		.then((data) => {
-			User.URLS[link] = data;
-			this.updateDom(document.querySelector(".history-records .row"), link, data)
+			User.URLS[link] = data;			
 			console.log(User)
 			document.body.classList.add("remove_preloader")
 		})
@@ -77,6 +76,9 @@ var PageObj = {
 		navigator.clipboard.writeText(element.innerHTML);
 		$('.toast').toast('show')
 		$('[data-toggle="tooltip"]').tooltip({title: "Hooray"});
+	},
+	saveURL(){
+		this.updateDom(document.querySelector(".history-records .row"), link, data)
 	}
 }
 window.addEventListener("load", (event) => {
