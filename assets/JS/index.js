@@ -74,10 +74,11 @@ var PageObj = {
 		console.log("Parent ", parent)
 	},
 	copyText(element){
-		console.log(element)
-
 		navigator.clipboard.writeText(element.innerHTML);
 		alert(element.innerHTML)
+		let toast = $('.toast')
+		console.log(toast)
+		toast.innerHTML = "Go go go!!"
 		$('.toast').toast('show')
 	}
 }
@@ -87,6 +88,7 @@ window.addEventListener("load", (event) => {
   	document.body.classList.add("remove_preloader")
   }, 4000);
 	$('.owl-carousel').owlCarousel();
+	$('[data-toggle="tooltip"]').tooltip(); 
 });
 // USED THE CALL METHOD TO SET THE "this" keyword to the PageObj Object;
 PageObj.menuBar.addEventListener("click", () => {
