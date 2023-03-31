@@ -13,3 +13,10 @@
     height: 100%;
     margin-bottom: 1rem;
   }
+  #notification {
+    position: absolute !important;
+    width: 100%;
+  }
+  #notification .toast {
+    background: #202020
+  }
