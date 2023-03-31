@@ -5,7 +5,7 @@ const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 const User = new _User()
 console.log(User)
 var PageObj = {	
-	modalCopyButton: document.querySelector(".close"),
+	modalCopyButton: document.querySelector(".modal .close"),
 	shortenedURLLink: document.querySelector("#shortURL"),
 	sidebarIsViscible: false,
 	URL: DEV_URL,
@@ -74,8 +74,11 @@ var PageObj = {
 		console.log("Parent ", parent)
 	},
 	copyText(element){
-		element.select()
-		element.setSelectionRange(0, 9999)
+		console.log(element)
+
+		navigator.clipboard.writeText(element.innerHTML);
+		alert(element.innerHTML)
+		$('.toast').toast('show')
 	}
 }
 window.addEventListener("load", (event) => {
@@ -100,6 +103,7 @@ PageObj.getUrlBtn.addEventListener("click", (e) => {
 	PageObj.ShortenLink.call(PageObj, link)
 })
 PageObj.modalCopyButton.addEventListener("click", () => {
+	console.log("clicked")
 	PageObj.copyText(PageObj.shortenedURLLink)
 })
 
