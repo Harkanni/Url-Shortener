@@ -7,7 +7,7 @@ export default class _User {
 	ADD_TO_RECORDS(parent) {
 	
 	}
-	GET_RECORDS(){
-		return this.URLS
+	GET_RECORDS(id){
+		return this.URLS[id]
 	}
 }

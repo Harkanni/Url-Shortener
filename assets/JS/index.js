@@ -4,7 +4,7 @@ const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 
 const User = new _User()
 console.log(User)
-var PageObj = {	
+var PageObj = {
 	modalCopyButton: document.querySelector(".modal .close"),
 	shortenedURLLink: document.querySelector("#shortURL"),
 	sidebarIsViscible: false,
@@ -77,8 +77,9 @@ var PageObj = {
 		$('.toast').toast('show')
 		$('[data-toggle="tooltip"]').tooltip({title: "Hooray"});
 	},
-	saveURL(){
-		this.updateDom(document.querySelector(".history-records .row"), link, data)
+	saveURL(link=this.link, data=User.GET_RECORDS(this.link)){
+		console.log(link, data)
+		// this.updateDom(document.querySelector(".history-records .row"), link, data)
 	}
 }
 window.addEventListener("load", (event) => {
@@ -99,7 +100,8 @@ PageObj.getUrlBtn.addEventListener("click", (e) => {
 	e.preventDefault()
 	document.body.classList.remove("remove_preloader")
 	let link = document.querySelector("#url").value
-	console.log("click", link)
+	PageObj.link = link;
+	console.log("click", link);
 	PageObj.ShortenLink.call(PageObj, link)
 })
 PageObj.modalCopyButton.addEventListener("click", () => {
