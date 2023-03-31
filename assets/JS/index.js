@@ -88,7 +88,6 @@ window.addEventListener("load", (event) => {
   	document.body.classList.add("remove_preloader")
   }, 4000);
 	$('.owl-carousel').owlCarousel();
-	$('[data-toggle="tooltip"]').tooltip(); 
 });
 // USED THE CALL METHOD TO SET THE "this" keyword to the PageObj Object;
 PageObj.menuBar.addEventListener("click", () => {
