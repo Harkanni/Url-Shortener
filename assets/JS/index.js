@@ -48,15 +48,15 @@ var PageObj = {
 			document.body.classList.add("remove_preloader")
 		})
 	},
-	updateDom(parent, link, data){
+	updateDom(parent, longURL, shortURL){
 		let child = document.createElement("div")
 		child.setAttribute("class", "record d-flex flex-col justify-content-between bg-dark mb-3")
 		child.innerHTML = `
 							<div>
-								<p class="link-text">${link.slice(0, link.indexOf("com") + 3) + "..."}</p>
+								<p class="link-text">${longURL.slice(0, longURL.indexOf("com") + 3) + "..."}</p>
 								<div class="d-flex">
 									<i class="fa fa-external-link mr-2" style="color: #fd601e;"></i>
-									<a href="#">${data}</a>
+									<a href="#">${shortURL}</a>
 								</div>
 							</div>							
 							
