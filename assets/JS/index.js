@@ -8,7 +8,7 @@ var PageObj = {
 	modalCopyButton: document.querySelector(".modal .close"),
 	shortenedURLLink: document.querySelector("#shortURL"),
 	sidebarIsViscible: false,
-	URL: DEV_URL,
+	URL: PRODUCTION_URL,
 	getUrlBtn: document.querySelector("#submit"),
 	preLoader: document.querySelector(".loading_animation"),
 	SIDEBAR: document.querySelector(".sidebar"),
