@@ -1,9 +1,15 @@
+// Importing User object from the User.js file
 import _User from "./User.js"
+
+// Setting constants for development and production URL
 const DEV_URL = "http://localhost:8080/bitly";
 const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 
+// Creating a new User object
 const User = new _User()
 console.log(User)
+
+// Creating an object to store elements and functions related to the page
 var PageObj = {
 	modalCopyButton: document.querySelector("#copy"),
 	shortenedURLLink: document.querySelector("#shortURL"),
