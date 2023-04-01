@@ -47,6 +47,11 @@ var PageObj = {
 			User.URLS[link] = data;			
 			console.log(User)
 			document.body.classList.add("remove_preloader")
+			return data;
+		})
+		.catch((e) => {
+			document.body.classList.add("remove_preloader")
+			alert("Unable to resolve host.....")			
 		})
 	},
 	updateDom(parent, longURL, shortURL){
