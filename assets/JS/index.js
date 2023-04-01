@@ -10,7 +10,7 @@ const User = new _User()
 console.log(User)
 
 // Creating an object to store elements and functions related to the page
-var PageObj = {
+const PageObj = {
 	modalCopyButton: document.querySelector("#copy"),
 	shortenedURLLink: document.querySelector("#shortURL"),
 	saveBTN: document.querySelector("#addToRecords"),
