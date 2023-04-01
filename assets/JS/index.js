@@ -5,7 +5,7 @@ const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 const User = new _User()
 console.log(User)
 var PageObj = {
-	modalCopyButton: document.querySelector(".modal .close"),
+	modalCopyButton: document.querySelector("#copy"),
 	shortenedURLLink: document.querySelector("#shortURL"),
 	saveBTN: document.querySelector("#addToRecords"),
 	sidebarIsViscible: false,
