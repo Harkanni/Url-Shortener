@@ -7,6 +7,7 @@ console.log(User)
 var PageObj = {
 	modalCopyButton: document.querySelector(".modal .close"),
 	shortenedURLLink: document.querySelector("#shortURL"),
+	saveBTN: document.querySelector("#addToRecords"),
 	sidebarIsViscible: false,
 	URL: PRODUCTION_URL,
 	getUrlBtn: document.querySelector("#submit"),
@@ -79,7 +80,7 @@ var PageObj = {
 	},
 	saveURL(link=this.link, data=User.GET_RECORDS(this.link)){
 		console.log(link, data)
-		// this.updateDom(document.querySelector(".history-records .row"), link, data)
+		this.updateDom(document.querySelector(".history-records .row"), link, data)
 	}
 }
 window.addEventListener("load", (event) => {
@@ -107,6 +108,10 @@ PageObj.getUrlBtn.addEventListener("click", (e) => {
 PageObj.modalCopyButton.addEventListener("click", () => {
 	console.log("clicked")
 	PageObj.copyText(PageObj.shortenedURLLink)
+});
+PageObj.saveBTN.addEventListener("click", () => {
+	console.log("saved")
+	PageObj.saveURL()
 })
 
 
