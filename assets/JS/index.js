@@ -3,7 +3,7 @@ import _User from "./User.js"
 
 // Setting constants for development and production URL
 const DEV_URL = "http://localhost:8080/bitly";
-const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
+//const PRODUCTION_URL = "https://crimson-fawn-hem.cyclic.app/bitly"
 
 // Creating a new User object
 const User = new _User()
